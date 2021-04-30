@@ -6,4 +6,3 @@ Here is a list of lua scripts I have made for Aimware
  -Team Damage
 2/7/2021
  -Nade Self
- 
