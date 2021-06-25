@@ -38,11 +38,15 @@ local function gameEvents(event)
 			end
 		end
 	end
+	if event:GetName() == "cs_win_panel_match" then
+		teamDamageArray = {}
+	end
 end
 
 client.AllowListener("player_death")
 client.AllowListener("player_hurt")
 client.AllowListener("weapon_fire")
+client.AllowListener("cs_win_panel_match")
 callbacks.Register("FireGameEvent", "gameEvents", gameEvents)
 
 screenSize = {0, 0}
